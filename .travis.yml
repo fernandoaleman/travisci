@@ -1,0 +1,14 @@
+sudo: required
+
+language: ruby
+ruby:
+  - 2.1.5
+
+services:
+  - docker
+
+script:
+  - docker --version
+
+notifications:
+  hipchat: b832be5d338e56dcda4ef0142a943a@travis-ci
