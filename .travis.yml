@@ -29,5 +29,6 @@ notifications:
     rooms:
       - b832be5d338e56dcda4ef0142a943a@travis-ci
     template:
-      - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}'
+      - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message} (<a href="%{build_url}">Details</a>/<a href="%{compare_url}">Change view</a>)'
+    format: html
     notify: true
