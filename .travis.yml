@@ -27,7 +27,7 @@ script:
 notifications:
   hipchat:
     rooms:
-      - 9QRKMhqQuxVzn9U4SN4lul4xyWk3yI82acf9lhlD@travis-testing
+      - XcBhHObH5XJNqoDudP9fWtVp9y6bKoqgN92pnvN9@travis-ci
     template:
       - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message} (<a href="%{build_url}">Details</a>/<a href="%{compare_url}">Change view</a>)'
     format: html
