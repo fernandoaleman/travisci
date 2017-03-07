@@ -1,10 +1,10 @@
-version: '2'
+version: '2.1'
 
 services:
   demo:
-    build:
-      image: myapp
-      dockerfile_path: Dockerfile
+    build: .
+    ports:
+      - 80:80
     depends_on:
       - redis
       - postgres
