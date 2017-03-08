@@ -1,3 +1,9 @@
+notifications:
+  hipchat:
+    rooms:
+      - XcBhHObH5XJNqoDudP9fWtVp9y6bKoqgN92pnvN9@travis-ci
+    notify: true
+
 sudo: required
 
 env:
@@ -23,9 +29,3 @@ install:
 script:
   - docker-compose exec demo bundle exec ruby test.rb
   - docker-compose exec demo bundle exec ruby check.rb
-
-notifications:
-  hipchat:
-    rooms:
-      - XcBhHObH5XJNqoDudP9fWtVp9y6bKoqgN92pnvN9@travis-ci
-    notify: 'true'
