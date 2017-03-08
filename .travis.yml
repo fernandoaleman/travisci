@@ -28,4 +28,4 @@ notifications:
   hipchat:
     rooms:
       - XcBhHObH5XJNqoDudP9fWtVp9y6bKoqgN92pnvN9@travis-ci
-    notify: true
+    notify: 'true'
